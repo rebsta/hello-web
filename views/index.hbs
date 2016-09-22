@@ -1,0 +1,15 @@
+<div class="row">
+	{{#each images}}
+	<div class="col s12 m4"> <!-- how many columns does each card take up? Out of 12 -->
+	  <div class="card">
+		<div class="card-image">
+		  <img class="materialboxed" src="{{this.src}}">
+		  <span class="card-title">{{this.title}}</span>
+		</div>
+		<div class="card-content">
+		  <p>{{this.desc}}</p>
+		</div>
+	  </div>
+	</div>
+	{{/each}}
+</div>
