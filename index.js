@@ -9,8 +9,8 @@ app.set('views', path.join(__dirname, '/views'));
 app.use(express.static(path.join(__dirname, '/public')));
 
 
-var server = app.listen(3000, function () { // a callback - will be called when app is ready!
-	console.log('The app is listening on http://localhost:3000');
+var server = app.listen(process.env.port || 3000, function () { // a callback - will be called when app is ready!
+	console.log('The app is listening!');
 });
 
 var list_of_animal_images = [
